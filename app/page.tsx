@@ -9,7 +9,6 @@ export default function Home() {
     <p className={styles.description}>私たちは市場をリードしているグローバルテックカンパニーです。
     </p>
   </div>
-  {/* eslint-disable-next-line @next/next/no-img-element */}
   <img className={styles.bgimg} src="/img-mv.jpg" alt="" />
 </section>
   );
