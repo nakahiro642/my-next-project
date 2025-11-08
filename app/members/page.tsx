@@ -1,4 +1,5 @@
-import { url } from "inspector";
+import Iage from "next/image";
+import styles from "./page.module.css";
 
 const data = {
     contents: [
@@ -43,8 +44,12 @@ const data = {
 
 export default function Page () {
     return (
-        <div style ={{ margin: 20 }}>
-            <h1>メンバーページ</h1>
-        </div>
+        <div className={styles.container}>
+            {data.contents.length === 0 ? (
+                <p className={styles.empty}>メンバーが登録されていません。</p>
+            ) : (
+                <ul>
+                    {data.contents.map((member) => (
+                </ul>
     );
 }
