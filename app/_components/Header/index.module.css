@@ -12,6 +12,11 @@
     display: flex;
 }
 
+.LogoLink img {
+    height: 40px;
+    width: auto;
+}
+
 .logo {
     height: 24px;
     width: auto;
