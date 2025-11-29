@@ -18,6 +18,12 @@
     border-radius: var(--border-radius);
 }
 
+.thumbnail {
+    width: 200px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
 .title {
     font-size:1.1rem;
     font-weight: bold;
