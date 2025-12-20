@@ -11,7 +11,7 @@ type Props = {
 export default function Pagination({ 
     totalCount, 
     current = 1,
-    basePath = "/news/",
+    basePath = "/news/p/",
     }: Props) {
     const pages = Array.from(
         { length: Math.ceil(totalCount / NEWS_LIST_LIMIT) },
@@ -26,7 +26,7 @@ export default function Pagination({
                         {current === p ? (
                             <span className={`${styles.item} ${styles.current}`}>{p}</span>
                         ) : (
-                            <Link href={`${basePath}${p}/page`} className={styles.item}>
+                            <Link href={`${basePath}${p}`} className={styles.item}>
                                 {p}
                             </Link>
                         )}
